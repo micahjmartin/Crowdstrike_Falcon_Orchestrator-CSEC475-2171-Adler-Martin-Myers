@@ -30,7 +30,14 @@ namespace FalconOrchestrator.Forensics
 
         public static string HashMD5(string filename)
         {
-            return "";
+            using (var md5 = MD5.Create())
+            {
+                using (var stream = File.OpenRead(filename))
+                {
+                    return BitConverter.ToString(md5.ComputeHash(stream)).Replace("-", string.Empty);
+                }
+            }
+                return "";
         }
     }
 }
