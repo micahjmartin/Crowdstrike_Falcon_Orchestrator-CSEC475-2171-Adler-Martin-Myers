@@ -14,6 +14,15 @@ namespace FalconOrchestrator.Forensics
 {
     public class FileHashing
     {
+
+        public static FileReport UploadToVirusTotal(string APIKEY){
+            VirusTotal virusTotal = new VirusTotal(APIKEY);
+            virusTotal.UseTLS = true;
+            byte[] eicar = Encoding.ASCII.GetBytes(@"X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*");
+            FileReport report = await virusTotal.GetFileReportAsync(eicar);
+            return report;
+        }
+
         public static List<string> BuildHashList(string algo, list<string> filelocations){
             List<string> hashedlist = new List<string>();
             if(algo.Equals("SHA")){

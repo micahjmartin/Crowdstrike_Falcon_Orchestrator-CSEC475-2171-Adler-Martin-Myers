@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <AssemblyName>VirusTotal.NET Client</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>VirusTotal.NET Client</PackageId>
+    <RootNamespace>VirusTotalNET.Client</RootNamespace>
+    <Version>1.6.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VirusTotal.NET\VirusTotal.NET.csproj" />
+  </ItemGroup>
+
+</Project>
