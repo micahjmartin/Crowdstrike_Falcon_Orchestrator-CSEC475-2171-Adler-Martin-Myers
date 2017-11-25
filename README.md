@@ -15,7 +15,7 @@ Upon a successful pull request our tool will be integrated into Falcon Orchestra
 
 ### 2 Navigation
 The Forensics module is added to the user interface which can simply be clicked to open the hashing interface.
-![alt text](https://raw.githubusercontent.com/micahjmartin/Crowdstrike_Falcon_Orchestrator-CSEC475-2171-Adler-Martin-Myers/master/img1.png)
+![alt text](https://raw.githubusercontent.com/micahjmartin/Crowdstrike_Falcon_Orchestrator-CSEC475-2171-Adler-Martin-Myers/master/img1.PNG)
 
 ### 3 File Hashing
 To hash a file users can enter the name of a Falcon Orchestrator enabled computer into the Computer textbox.  The direct file path to the target file on that machine must be entered into the File Path textbox.
